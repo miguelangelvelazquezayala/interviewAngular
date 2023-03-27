@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "path": "C:/Users/eemsh/Documents/interview"
+    }
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.wordWrap": "on",
+    "explorer.autoReveal": false,
+    "files.exclude": {
+      "**/projects": true
+    },
+    "html.format.wrapLineLength": 80,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.presets.angular": true
+  }
+}
