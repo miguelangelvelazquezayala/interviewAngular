@@ -11,12 +11,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { Components } from './components';
+import { AppComponent, Components } from './components';
 import { reducers } from './store/app.reducer';
 
 @NgModule({
-  declarations: [AppComponent, ...Components],
+  declarations: [...Components],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
