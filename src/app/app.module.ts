@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -23,11 +25,13 @@ import { reducers } from './store/app.reducer';
     FlexLayoutModule,
     MatButtonModule,
     MatIconModule,
+    MatInputModule,
     MatListModule,
     MatSidenavModule,
     MatTabsModule,
     MatFormFieldModule,
     MatToolbarModule,
+    ReactiveFormsModule,
     StoreModule.forRoot(reducers),
   ],
   providers: [],

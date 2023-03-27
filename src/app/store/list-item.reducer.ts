@@ -17,6 +17,6 @@ export const listItemReducer = createReducer(
   })),
   on(deleteItem, (state, { item }) => ({
     ...state,
-    items: state.items.filter((item) => item !== item),
+    items: state.items.filter((filteredItem) => filteredItem !== item),
   }))
 );

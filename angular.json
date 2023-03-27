@@ -91,6 +91,9 @@
             },
             "development": {
               "browserTarget": "interview:build:development"
+            },
+            "final.step": {
+              "browserTarget": "interview:build:final.step"
             }
           },
           "defaultConfiguration": "development"
