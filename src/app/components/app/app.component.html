@@ -7,7 +7,7 @@
     >
       <mat-icon>menu</mat-icon>
     </button>
-    <span>{{ title }}</span>
+    <span id="title">{{ title }}</span>
   </mat-toolbar>
 
   <mat-sidenav-container>
@@ -32,7 +32,7 @@
             Implement the deletion of items from the list, to remove an item you
             have to dispatch "DeleteItem" store action.
           </li>
-          <li>Run e2e tests successfully.</li>
+          <li>Complete and Run e2e tests successfully.</li>
         </ng-container>
       </ol>
       <p>
@@ -43,6 +43,7 @@
     <mat-sidenav-content>
       <nav mat-tab-nav-bar [tabPanel]="tabPanel">
         <a
+          id="list-link"
           mat-tab-link
           routerLink="list"
           routerLinkActive
@@ -51,6 +52,7 @@
           >List</a
         >
         <a
+          id="add-link"
           mat-tab-link
           routerLink="add"
           routerLinkActive

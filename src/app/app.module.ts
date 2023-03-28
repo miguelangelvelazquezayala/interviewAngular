@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent, Components } from './components';
+import { Environment } from './models';
 import { reducers } from './store/app.reducer';
 
 @NgModule({
@@ -37,4 +38,6 @@ import { reducers } from './store/app.reducer';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  public a: Environment = { title: 'Interview title' };
+}
