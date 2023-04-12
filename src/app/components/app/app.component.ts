@@ -10,4 +10,18 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
   public bonusSteps = environment.bonusSteps;
   public title = environment.title;
+  isFinalStep: boolean;
+
+  constructor() {
+    console.log(environment.rootClass);
+
+    if((environment.rootClass === 'first-steps') || (environment.rootClass === undefined)) {
+      this.isFinalStep = false;
+    }
+    else {
+      this.isFinalStep = true;
+    }
+    
+    console.log(this.isFinalStep);
+  }
 }

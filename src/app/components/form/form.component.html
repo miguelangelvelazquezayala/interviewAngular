@@ -1,5 +1,23 @@
 <h2>Add element</h2>
-<form>
-  <p>This must be replaced.</p>
-  <button id="button" mat-raised-button>Add</button>
+<form [formGroup]="form">
+  <mat-form-field>
+    <input
+      id="input"
+      matInput
+      placeholder="New item"
+      formControlName="newItem"
+      name="newItem"
+      type="text"
+    />.
+    <input />
+    <mat-error *ngIf="true">This field is required</mat-error>
+  </mat-form-field>
+  <button
+    (click)="add()"
+    id="button"
+    [disabled]="form.status === 'INVALID'"
+    mat-raised-button
+  >
+    Add
+  </button>
 </form>

@@ -11,10 +11,12 @@ const initialState: State = {
 
 export const listItemReducer = createReducer(
   initialState,
+
   on(addItem, (state: State, { item }) => ({
     ...state,
     items: [...state.items, item],
   })),
+  
   on(deleteItem, (state, { item }) => ({
     ...state,
     items: state.items.filter((filteredItem) => filteredItem !== item),

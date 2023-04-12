@@ -1,4 +1,7 @@
-<div class="first-steps">
+<div
+  id="root"
+  [ngClass]="{ 'last-steps': !isFinalStep, 'first-steps': isFinalStep }"
+>
   <mat-toolbar>
     <button
       mat-icon-button
